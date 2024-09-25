@@ -8,13 +8,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // backgroundImage: {
-      //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-      //   "gradient-conic":
-      //     "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      // },
-      fontFamily: {
-        sans: ["Helvetica", "Arial", "sans-serif"],
+      colors: {
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        button: "#3537E8",
+        heading: "#3537E8",
+      },
+      keyframes: {
+        rotateX: {
+          "0%": { transform: "rotateX(0deg)" },
+          "100%": { transform: "rotateX(180deg)" },
+        },
+      },
+      animation: {
+        rotateX: "rotateX 0.7s ease-in-out",
       },
     },
   },
